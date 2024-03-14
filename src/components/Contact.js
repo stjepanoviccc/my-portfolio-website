@@ -3,7 +3,7 @@ import Wrap from './Wrap'
 import styles from "../scss/components/Contact.module.scss";
 import headerStyles from "../scss/components/Headers.module.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faInstagram, faViber } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 const Contact = () => {
@@ -24,13 +24,13 @@ const Contact = () => {
                     <a className={styles.contactLink} href="https://www.instagram.com/andrejstjepanovicc/" target="_blank" rel="noreferrer">https://www.instagram.com/andrejstjepanovicc/</a>
                 </div>
                 <div className={styles.contactItem}>
-                    <FontAwesomeIcon icon={faViber} className={styles.icon}/>
-                    <h5 className={styles.contactTitle}>Viber:</h5>
-                    <a className={styles.contactLink} href="https://www.instagram.com/andrejstjepanovicc/" target="_blank" rel="noreferrer">https://www.instagram.com/andrejstjepanovicc/</a>
+                    <FontAwesomeIcon icon={faGithub} className={styles.icon}/>
+                    <h5 className={styles.contactTitle}>Github:</h5>
+                    <a className={styles.contactLink} href="https://github.com/stjepanoviccc" target="_blank" rel="noreferrer">https://github.com/stjepanoviccc</a>
                 </div>
                 <div className={styles.contactItem}>
                     <FontAwesomeIcon icon={faEnvelope} className={styles.icon}/>
-                    <h5 className={styles.contactTitle}>Gmail:</h5>
+                    <h5 className={styles.contactTitle}>Email:</h5>
                     <p className={styles.mail}>stjepanoviccc2021@gmail.com</p>
                 </div>
             </div>
