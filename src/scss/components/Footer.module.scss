@@ -1,0 +1,41 @@
+@import "../base/colors";
+@import "../base/breakpoints";
+
+.footerWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include mobile-desktop {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+.copyright {
+    color: $tertiary;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+    @include mobile-desktop {
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+}
+
+.socialHolder {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.socialIcon {
+    font-size: 1.2rem;
+    color: $tertiary;
+}
+
+.socialIcon:hover {
+    transition: 300ms;
+    cursor:pointer;
+    color: $secondary;
+}

@@ -1,0 +1,20 @@
+@import "../base/colors";
+@import "../base/breakpoints";
+
+.h2 {
+    display: inline-block;
+    color: $tertiary;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 5px solid $tertiary;
+    padding-bottom: 5px;
+
+    @include mobile-desktop {
+        font-size: 1.5rem;
+        border-bottom: 3px solid $tertiary;
+    }
+}
+
+.headerWrap {
+    padding-bottom: 4rem;
+}

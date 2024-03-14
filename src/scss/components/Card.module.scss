@@ -1,0 +1,61 @@
+@import "../base/colors";
+@import "../base/breakpoints";
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 2px solid $tertiary;
+    transition: 300ms;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.cardImage {
+    height: 300px;
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    opacity: 0.8;
+    transition: 300ms;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    @include mobile-tablet {
+        height: 250px;
+    }
+}
+
+.contentWrap {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $tertiary;
+}
+
+.cardDescription {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.cardTechnologies {
+    font-size: 0.8rem;
+    word-spacing: 5px;
+    color: $tertiary;
+}
+
+.cardLink {
+    text-decoration: underline;
+    color: $tertiary;
+    font-weight: bold;
+}

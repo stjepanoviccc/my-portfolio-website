@@ -1,0 +1,95 @@
+@import "../base/colors";
+@import "../base/breakpoints";
+
+.wrapExtendForNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+}
+
+.nav {
+    transition-property: transform;
+    transition-duration: 300ms;
+    padding-left: 1rem;
+}
+
+.navDesktop {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.navSmall {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 50;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $primary;
+    height: 100vh;
+    width: 100%;
+}
+
+.navInactive {
+    transform: translateX(100%);
+}
+
+.navActive {
+    transform: translateX(0);
+}
+
+.myLinkDesktop {
+    color: $secondary;
+    position: relative;
+    transition-duration: 300ms;
+    cursor: pointer;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+.myLinkDesktop:hover {
+    color: $tertiary;
+}
+
+.myLinkSmall {
+    padding-left: 0.75rem;
+    padding-top: 1rem; 
+    padding-bottom: 1rem; 
+    font-weight: bold;
+}
+
+.burgerMenu {
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+}
+
+.socialHolder {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    @include mobile-desktop {
+        padding-left: 0.75rem;
+        padding-top: 1rem;
+    }
+}
+
+.socialIcon {
+    font-size: 1.2rem;
+    color: $secondary;
+}
+
+.socialIcon:hover {
+    transition: 300ms;
+    cursor:pointer;
+    color: $tertiary;
+}

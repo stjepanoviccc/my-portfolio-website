@@ -1,0 +1,47 @@
+@import "../base/colors";
+@import "../base/breakpoints";
+
+.wrapExtendForProjects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    position: relative;
+
+    @include mobile-desktop {
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.projectsHolder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+
+    @include mobile-tablet {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include tablet-desktop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.repoLink {
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: $secondary;
+    transition: 300ms;
+
+    @include mobile-tablet {
+        font-size: 1.2rem;
+    }
+
+    &:hover {
+        color: $tertiary;
+    }
+}

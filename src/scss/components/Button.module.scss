@@ -1,0 +1,31 @@
+@import "../base/breakpoints";
+@import "../base/colors";
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 300ms;
+
+    @include mobile-desktop {
+        font-size: 0.9rem;
+    }
+}
+
+.buttonFill {
+    border: 2px solid $tertiary;
+    background-color: $tertiary;
+    color: $primary;
+}
+
+.buttonGhost {
+    border: 2px solid $tertiary;
+    color: $tertiary;
+    transition: 300ms;
+
+    &:hover {
+        background-color: $tertiary;
+        color: $primary;
+    }
+}

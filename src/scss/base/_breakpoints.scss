@@ -1,0 +1,21 @@
+$desktop: 1239px;
+$tablet: 767px;
+
+// used for nav only
+@mixin mobile-desktop {
+    @media screen and (max-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin mobile-tablet {
+    @media screen and (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin tablet-desktop {
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        @content;
+    }
+}
