@@ -4,6 +4,7 @@
 .card {
     display: flex;
     flex-direction: column;
+    position: relative;
     border-radius: 15px;
     border: 2px solid $tertiary;
     transition: 300ms;
@@ -58,4 +59,17 @@
     text-decoration: underline;
     color: $tertiary;
     font-weight: bold;
+}
+
+.cardNew {
+    border: 2px solid red;
+    border-top-right-radius: 12px;
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
 }

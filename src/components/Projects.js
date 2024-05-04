@@ -11,6 +11,7 @@ const Projects = () => {
                 <h2 id="projects" className={headerStyles.h2}>My Projects</h2>
             </div>
             <div className={styles.projectsHolder}>
+                <Card isNew={true} img="/projects-api.jpg" title="BCPP Web API" desc="Benefit Card Payment Processor Web API" technologies="SPRINGBOOT POSTGRESQL HIBERNATE DOCKER JUNIT MOCKITO" href="github.com/stjepanoviccc/benefit-card-payment-processor"/>
                 <Card img="/projects-sticko.jpg" title="Šticko Plast" desc="Website for sales and installation of PVC and Aluminum joinery." technologies="NEXTJS TAILWINDCSS" href="sticko-plast.com"/>
                 <Card img="/projects-asstart.jpg" title="AS Start Prijedor" desc="Portfolio Website for Driving School in Prijedor in BiH." technologies="NEXTJS TAILWINDCSS" href="asstartprijedor.com"/>
                 <Card img="/projects-tastar.jpg" title="Travel Agency STAR" desc="CMS template for Travel Agency Star. MVC Architecture" technologies="SPRINGBOOT THYMELEAF JQUERY TAILWINDCSS MYSQL" href="github.com/stjepanoviccc/travel-agency-star"/>
