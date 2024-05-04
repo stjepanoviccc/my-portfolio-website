@@ -14,7 +14,7 @@ const Projects = () => {
                 <Card img="/projects-sticko.jpg" title="Šticko Plast" desc="Website for sales and installation of PVC and Aluminum joinery." technologies="NEXTJS TAILWINDCSS" href="sticko-plast.com"/>
                 <Card img="/projects-asstart.jpg" title="AS Start Prijedor" desc="Portfolio Website for Driving School in Prijedor in BiH." technologies="NEXTJS TAILWINDCSS" href="asstartprijedor.com"/>
                 <Card img="/projects-tastar.jpg" title="Travel Agency STAR" desc="CMS template for Travel Agency Star. MVC Architecture" technologies="SPRINGBOOT THYMELEAF JQUERY TAILWINDCSS MYSQL" href="github.com/stjepanoviccc/travel-agency-star"/>
-                <Card img="/projects-urbanhunt.jpg" title="Urban Hunt" desc="CMS template for Real Estate Agencies. REST Api with real-time communication" technologies="NODE SPRINGBOOT REACT TAILWINDCSS MYSQL" href="github.com/stjepanoviccc/travel-agency-star"/>
+                <Card img="/projects-urbanhunt.jpg" title="Urban Hunt" desc="CMS template for Real Estate Agencies. REST Api with real-time communication" technologies="NODE SPRINGBOOT REACT TAILWINDCSS MYSQL" href="github.com/stjepanoviccc/urban-hunt-backend"/>
                 <Card img="/projects-hotelres.jpg" title="Hotel Reservations" desc="WPF template app for Hotel Reservations. Only one instance of Hotel(singleton)" technologies="C# WPF MSSQL" href="github.com/stjepanoviccc/hotel-reservation-wpf"/>
                 <Card img="/projects-organic.jpg" title="Organic Shop" desc="Astra Theme(WordPress) template for Organic Shop made in React" technologies="REACT SASS FIREBASE" href="organic-shop-react.netlify.app/"/>
             </div>
