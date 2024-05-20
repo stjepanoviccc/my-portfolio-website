@@ -14,7 +14,9 @@
 }
 
 .cardImage {
-    height: 300px;
+    object-fit: cover;
+    display: block; 
+    height: 400px;
     width: 100%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -27,7 +29,7 @@
     }
 
     @include mobile-tablet {
-        height: 250px;
+        height: 325px;
     }
 }
 
