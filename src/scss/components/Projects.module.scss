@@ -16,33 +16,71 @@
     }
 }
 
-.projectsHolder {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+.projectsIntro {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding-bottom: 2rem;
+    color: rgba(198, 199, 207, 0.7);
 
-    @include mobile-tablet {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    @include tablet-desktop {
-        grid-template-columns: repeat(2, 1fr);
+    @include mobile-desktop {
+        text-align: center;
     }
 }
 
-.repoLink {
-    padding-top: 3rem;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 1.5rem;
+.projectsHolder {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.ctaRow {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.ctaGhost {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 14px 28px;
+    border-radius: 10px;
+    border: 2px solid rgba(198, 199, 207, 0.25);
     color: $secondary;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
     transition: 300ms;
 
-    @include mobile-tablet {
-        font-size: 1.2rem;
+    &:hover {
+        border-color: $tertiary;
+        color: $tertiary;
     }
+}
+
+.ctaIcon {
+    display: flex;
+    align-items: center;
+}
+
+.ctaFill {
+    display: flex;
+    align-items: center;
+    padding: 14px 28px;
+    border-radius: 10px;
+    border: 2px solid $tertiary;
+    background-color: $tertiary;
+    color: $primary;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    transition: 300ms;
 
     &:hover {
+        background-color: transparent;
         color: $tertiary;
     }
 }
