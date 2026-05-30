@@ -42,7 +42,7 @@ const Projects = () => {
                     img="/images/infinite-gifts-shop-1.webp"
                     img2="/images/infinite-gifts-shop-2.webp"
                     technologies="NEXTJS TAILWINDCSS NESTJS POSTGRESQL DOCKER"
-                    href="infinitegifts.shop/"
+                    href="infinitegiftsshop.ba/"
                 />
             </div>
             <div className={styles.ctaRow}>
